@@ -62,6 +62,8 @@ button {
 .logo {
   font-family: var(--title-font);
   color: var(--logo);
+  display: inline-block;
+  margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 26px;
@@ -136,11 +138,11 @@ button {
   margin-left: 50px;
 }
 
-.nav .link-name,
-.link-name-tel {
-  display: inline-flex;
+.nav .link-name {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
   font-weight: 500;
   font-size: 14px;
@@ -149,26 +151,9 @@ button {
   color: var(--text-color);
 }
 
-.link-name::before {
-  content: "";
-  width: 20px;
-  height: 20px;
+.icon-nav {
+  display: flex;
   margin-right: 10px;
-
-  background-image: url(../images/vector1.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.link-name-tel::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-
-  background-image: url(../images/smartphone.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .site-nav .link:hover {
@@ -179,12 +164,16 @@ button {
   color: var(--hover);
 }
 
-.nav .link-name:hover {
+.nav .link-name:hover,
+.icon-nav:hover {
   color: var(--hover);
+  fill: var(--hover);
 }
 
-.nav .link-name:focus {
+.nav .link-name:focus,
+.icon-nav:focus {
   color: var(--hover);
+  fill: var(--hover);
 }
 
 /* main */
@@ -224,6 +213,9 @@ button {
 
 .section-text {
   margin-bottom: 30px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -276,47 +268,16 @@ button {
   width: 270px;
 }
 
-.icon-antenna::before {
+.icon-antenna {
   display: block;
-  height: 120px;
-  content: "";
-  margin-bottom: 30px;
-  background-image: url(../images/antenna\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--add-bg-color);
 }
 
-.icon-clock::before {
-  display: block;
+.icon-fon {
+  display: flex;
   height: 120px;
-  content: "";
   margin-bottom: 30px;
-  background-image: url(../images/clock\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--add-bg-color);
-}
-
-.icon-vector::before {
-  display: block;
-  height: 120px;
-  content: "";
-  margin-bottom: 30px;
-  background-image: url(../images/diagram\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--add-bg-color);
-}
-
-.icon-astronaut::before {
-  display: block;
-  height: 120px;
-  content: "";
-  margin-bottom: 30px;
-  background-image: url(../images/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  align-items: center;
+  justify-content: center;
   background-color: var(--add-bg-color);
 }
 
@@ -423,7 +384,17 @@ button {
 /* Portfolio */
 
 .portfolio {
-  color: rgba(0, 0, 0, 0%);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .work-nav {
@@ -492,6 +463,8 @@ button {
   margin-bottom: 4px;
 
   letter-spacing: 0.06em;
+
+  color: var(--axcent-color);
 }
 
 .projects-text {
@@ -562,11 +535,11 @@ address {
 }
 
 .icon-facebook {
-  background-image: url(../images/facebook\ 1.png);
+  background-image: url(../images/facebook\ 1.svg);
 }
 
 .icon-linkedin {
-  background-image: url(../images/linkedin\ 1.png);
+  background-image: url(../images/linkedin\ 1.svg);
 }
 
 .footer-text {

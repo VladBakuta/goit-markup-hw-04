@@ -35,18 +35,24 @@
             <li class="item">
               <a href="portfolio.html" class="link">Портфолио</a>
             </li>
-            <li class="item"><a href="footer" class="link">Контакты</a></li>
+            <li class="item"><a href="#footer" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="nav">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link-name"
-              >info@devstudio.com</a
+            <a href="mailto:info@devstudio.com" class="link-name">
+              <svg class="icon-nav" width="16px" height="12px">
+                <use href="./images/symbol-defs.svg#mail"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link-name-tel"
-              >+38 096 111 11 11</a
+            <a href="tel:+380961111111" class="link-name">
+              <svg class="icon-nav" width="10px" height="16px">
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -55,38 +61,55 @@
     <main>
       <section class="hero">
         <div class="overlay">
-          <h1 class="section-text">
-            Эффективные решения <br />
-            для вашего бизнеса
-          </h1>
+          <h1 class="section-text">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="section-button">Заказать услугу</button>
         </div>
       </section>
       <section class="section">
         <div class="conteiner">
           <ul class="title-link">
-            <li class="section-title-list icon-antenna">
+            <li class="section-title-list">
+              <div class="icon-fon">
+                <svg class="icon-antenna icon-title" width="70px" height="70px">
+                  <use href="./images/symbol-defs.svg#antenna-1"></use>
+                </svg>
+              </div>
               <h3 class="title-list">Внимание к деталям</h3>
               <p class="title-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="section-title-list icon-clock">
+            <li class="section-title-list">
+              <div class="icon-fon">
+                <svg class="icon-antenna icon-title" width="70px" height="70px">
+                  <use href="./images/symbol-defs.svg#clock-1"></use>
+                </svg>
+              </div>
               <h3 class="title-list">Пунктуальность</h3>
               <p class="title-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="section-title-list icon-vector">
+            <li class="section-title-list">
+              <div class="icon-fon">
+                <svg class="icon-antenna icon-title" width="70px" height="70px">
+                  <use href="./images/symbol-defs.svg#diagram-1"></use>
+                </svg>
+              </div>
               <h3 class="title-list">Планирование</h3>
               <p class="title-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="section-title-list icon-astronaut">
+            <li class="section-title-list">
+              <div class="icon-fon">
+                <svg class="icon-antenna icon-title" width="70px" height="70px">
+                  <use href="./images/symbol-defs.svg#astronaut"></use>
+                </svg>
+              </div>
               <h3 class="title-list">Современные технологии</h3>
               <p class="title-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -162,29 +185,38 @@
     </main>
     <footer class="footer-text">
       <div class="conteiner">
-        <a href="/" class="logo">
-          <span class="logo-text">Web</span
-          ><span class="logo-text-footer">Studio</span>
-        </a>
-        <address>
+        <div class="logo-addres">
+          <a href="/" class="logo">
+            <span class="logo-text">Web</span
+            ><span class="logo-text-footer">Studio</span>
+          </a>
+
+          <address>
+            <ul>
+              <li class="address-name">г. Киев,пр-т Леси Украинки,26</li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="link-list"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="link-list"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="flex">
+          <h3>присоединяйтесь</h3>
           <ul>
-            <li class="address-name">г. Киев,пр-т Леси Украинки,26</li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="link-list"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="link-list"
-                >+38 096 111 11 11</a
-              >
-            </li>
+            <li><a href="" class="link-socmadia icon-instagram"></a></li>
+            <li><a href="" class="link-socmadia icon-twitter"></a></li>
+            <li><a href="" class="link-socmadia icon-facebook"></a></li>
+            <li><a href="" class="link-socmadia icon-linkedin"></a></li>
           </ul>
-        </address>
-        <a href="" class="link-socmadia icon-instagram"></a>
-        <a href="" class="link-socmadia icon-twitter"></a>
-        <a href="" class="link-socmadia icon-facebook"></a>
-        <a href="" class="link-socmadia icon-linkedin"></a>
+        </div>
       </div>
     </footer>
   </body>
