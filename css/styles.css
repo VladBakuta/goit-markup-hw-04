@@ -191,11 +191,14 @@ button {
 .hero {
   color: var(--add-color);
   background-color: var(--footer-color);
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .overlay {
   text-align: center;
-  min-width: 1600px;
+
   height: 600px;
   padding: 200px 0;
   outline: 2px solid tomato;
@@ -386,11 +389,18 @@ button {
   justify-content: center;
 }
 
+.dream-icon-socmedia {
+  margin-right: 10px;
+}
+
+.dream-icon-socmedia:last-child {
+  margin-right: 0;
+}
+
 .dream-link-socmedia {
   display: flex;
   width: 44px;
   height: 44px;
-  margin-right: 10px;
 
   justify-content: center;
   align-items: center;
@@ -490,6 +500,7 @@ button {
   font-size: 16px;
   line-height: 1.6;
   border-radius: 4px;
+  border: 0;
 
   letter-spacing: 0.03em;
 
@@ -518,9 +529,12 @@ button {
   margin-bottom: 30px;
 }
 
-.work-list-content:hover,
-.work-list-content:focus {
-  border: 1px solid var(--border-color);
+.work-content {
+  display: block;
+}
+
+.work-content:hover,
+.work-content:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
